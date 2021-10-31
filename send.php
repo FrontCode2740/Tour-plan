@@ -22,7 +22,8 @@ if (isset($_POST['send-footer'])) {
     $email = $_POST['newslatter-email'];
     $body = "
     <h2>Новое обращение</h2>
-    <b>Почта:</b> $email";
+    <b>Почта:</b> $email
+    ";
 }
 
 
@@ -40,14 +41,15 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'pidor2740@gmail.com'; // Логин на почте
-    $mail->Password   = 'gahyhagan1'; // Пароль на почте
-    $mail->SMTPSecure = 'ssl';
+    $mail->Username   = 'mohnakirill@gmail.com'; // Логин на почте
+    $mail->Password   = '79234739972a'; // Пароль на почте
+    $mail->SMTPSecure = 'SSL';
     $mail->Port       = 465;
-    $mail->setFrom('pidor2740@gmail.com', 'Роман Музылев'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('mohnakirill@gmail.com', 'Кирилл Мохна'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('mohnakirill@gmail.com');
+    $mail->addAddress('pidor2740@gmail.com');
+
 
     // Отправка сообщения
     $mail->isHTML(true);
