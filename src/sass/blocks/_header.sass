@@ -1,5 +1,5 @@
 .navbar
-  background-color: $light
+  background-color: #fff
   &-top
     display: flex
     align-items: center
@@ -27,9 +27,13 @@
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
-
       width: 177px
       height: auto
+    &__item
+      &_mobile
+        &_visible
+          display: none
+
 .search
   display: flex
   position: relative
@@ -55,6 +59,7 @@
     width: 65px
     border: none
     background-color: $primary
+    cursor: pointer
 .user
   display: flex
   align-items: center
