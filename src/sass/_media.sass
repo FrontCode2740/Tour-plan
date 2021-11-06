@@ -23,8 +23,8 @@
     width: 132px
   .navbar
     &-top
-      padding-top: 30px
-      padding-bottom: 30px
+      padding-top: 31px
+      padding-bottom: 36px
     &__search
       margin-left: auto
       max-width: 340px
@@ -65,7 +65,8 @@
       grid-template-columns: repeat(6, 1fr )
       grid-row-gap: 40px
     &__input
-      flex-basis: 48%
+      &-group
+        flex-basis: 48%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -98,7 +99,7 @@
     max-width: 576px
     width: 92%
   body
-    padding-top: 78px
+    padding-top: 88px
   .search
     &__input
       max-width: 245px
@@ -224,7 +225,8 @@
     height: 255px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 
 @media  ( max-width: 576px)
   .container
@@ -235,56 +237,140 @@
   .slider
     height: 250px
   .hotel
+    padding-top: 7px
+    padding-bottom: 44px
+    &-info
+      &__description
+        padding-bottom: 31px
+    &-name
+      font-size: 26px
+      line-height: 30px
     &-slider
-      height: 250px
+      height: 197px
     &__slider
       margin-bottom: 20px
+  .booking
+    padding: 39px 21px 14px 25px
+    min-height: 235px
   .newslatter
-    padding: 76px 0 83px 0
+    padding: 69px 0 101px 0
     &__title
-      margin-bottom: 37px
+      margin-bottom: 43px
       font-style: normal
       font-weight: 300
-      font-size: 20px
+      font-size: 21px
       line-height: 25px
+  .map
+    margin-top: 24px
+    height: 192px
   .subscribe
     width: 100%
   .card
     width: 100%
+  .reviews
+    padding: 29px 0 86px 0
+    &__title
+      font-family: Mulish
+      font-style: normal
+      font-weight: bold
+      margin-bottom: 57px
+      font-size: 21px
+      line-height: 23px
+      text-align: center
+    &-slider
+      &__button
+        top: 32px
+        &--prev
+          left: 50%
+          margin-left: -99px
+          transform: translate(-50%, 0)
+        &--next
+          right: 50%
+          margin-right: -99px
+          transform: translate(50%, 0)
+      &__username
+        margin-top: 17px
+        margin-bottom: 12px
+      &__profile
+        margin-bottom: 40px
+      &__text
+        font-size: 13px
+        line-height: 163%
+  .activities
+    padding-top: 3px
+    padding-bottom: 40px
+    &__title
+      font-size: 20px
+      margin-bottom: 38px
+  .card
+    height: 284px
+    margin-bottom: 25px
+    &__title
+      font-size: 17px
+      margin-bottom: 29px
   .footer
+    padding-top: 75px
     &-wrapper
       grid-template-columns: 1fr
       grid-gap: 30px
     &__logo
       grid-row: 1
       grid-column: 1
+      margin-top: 0
+      margin-bottom: 19px
+      height: 120px
+    &__title
+      font-size: 20px
+      margin-bottom: 22px
     &__social
+      &-links
+        margin-left: 7px
+        margin-bottom: 4px
       &-network
+        display: flex
+        flex-direction: column
         grid-row: 2
         grid-column: 1
+        margin-bottom: 4px
+    &__item
+      font-size: 15px
+      &--mb-2
+        margin-bottom: 27px
     &__additional
-      grid-row: 3
-      grid-column: 1
-    &__categories
       grid-row: 4
       grid-column: 1
-    &__legal
+      margin-bottom: 10px
+    &__categories
       grid-row: 5
       grid-column: 1
+      margin-bottom: 26px
+    &__legal
+      grid-row: 3
+      grid-column: 1
+      margin-bottom: 8px
     &__form
       flex-direction: column
     &__contact
       &-details
         grid-row: 6
         grid-column: 1
+        margin-bottom: 14px
       &-form
         grid-row: 7
         grid-column: 1
+    &__text
+      margin-top: 32px
+      margin-bottom: 33px
     &__message
       width: 100%
+      min-height: 134px
+      margin-top: 10px
+      margin-bottom: 0
     &__input
       width: 100%
       padding: 18px 0 17px 23px
+      &-group
+        width: 100%
     &__button
       order: 1
     &__info
@@ -296,6 +382,7 @@
       margin-top: 30px
       &_text
         margin-bottom: 10px
+        font-size: 13px
       &_icon
         margin: 0
 @media  ( max-width: 480px)

@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="src/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="src/css/aos.css">
   <link rel="stylesheet" href="src/css/style.css">  
+  <link rel="apple-touch-icon" sizes="152x152" href="src/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/favicons/favicon-16x16.png">
+  <link rel="manifest" href="src/favicons/site.webmanifest">
+  <link rel="mask-icon" href="src/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
   <header class="navbar navbar_mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
           <img src="src/img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search navbar__search_mobile_hidden">
+        <form action="#" class="search navbar__search navbar__search_mobile_hidden" data-aos="fade-right" data-aos-delay="200">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="src/img/search.svg" alt="icon: search">
           </button>
         </form>
 
-        <a href="#" class="user navbar__user navbar__user_mobile_hidden">
+        <a href="#" class="user navbar__user navbar__user_mobile_hidden" data-aos="fade-right" data-aos-delay="300">
           <img src="src/img/user-avatar.JPG" alt="avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -42,7 +48,7 @@
 
 
     </div>
-    <!-- /.container -->
+    <!-- /.conainer -->
     <div class="navbar-bottom">
       <div class="container">
         <nav>
@@ -126,7 +132,7 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__img" src="src/img/slide.jpg" alt="slide"></div>
-              <div class="swiper-slide hotel-slider__item"><img class=" hotel-slider__img" src="src/img/slide.jpg" alt="slide"></div>
+              <div class="swiper-slide hotel-slider__item"><img class=" hotel-slider__img" src="src/img/slide-2.jpg" alt="slide"></div>
               <div class="swiper-slide hotel-slider__item"><img class=" hotel-slider__img" src="src/img/slide-3.jpg" alt="slide"></div>
               <div class="swiper-slide hotel-slider__item"><img class=" hotel-slider__img" src="src/img/slide-4.jpg" alt="slide"></div>
               <div class="swiper-slide hotel-slider__item"><img class=" hotel-slider__img " src="src/img/slide-5.jpg" alt="slide"></div>
@@ -185,12 +191,14 @@
   <!-- /.hotel -->
   <section class="newslatter">
     <div class="newslatter-wrapper">
-      <h2 class="newslatter-title newslatter__title">
+      <h2 class="newslatter-title newslatter__title" data-aos="fade-up"
+     data-aos-duration="3000">
         subscribe to our
-        <span class="newslatter-title__strong">Newsletter</span>
+        <span class="newslatter-title__strong" >Newsletter</span>
       </h2>
-      <form action="send.php" method="post" class="subscribe newslatter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address" name="newslatter-email">
+      <form action="send.php" method="post" class="subscribe newslatter__subscribe form" data-aos="fade-up"
+     data-aos-duration="3000">
+        <input type="email" class="subscribe__input" placeholder="Your email address" name="newslatter-email" required>
         <button name="send-newslatter" class="subscribe__button">
           Send
         </button>
@@ -303,7 +311,7 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
             <img src="src/img/activity-1.jpg" alt="The curious corner
             of chamarel" class="card__image">
             <h3 class="card__title">The curious corner
@@ -313,7 +321,7 @@
             <!-- /.card_buton -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
             <img src="src/img/activity-2.jpg" alt="Gymkhana club golf
             course" class="card__image">
             <h3 class="card__title">Gymkhana club golf
@@ -323,7 +331,7 @@
             <!-- /.card_buton -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
             <img src="src/img/activity-3.jpg" alt="Tamarind falls hiking
             trip - full day" class="card__image">
             <h3 class="card__title">Tamarind falls hiking
@@ -334,7 +342,7 @@
             <!-- /.card_buton -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
             <img src="src/img/activity-4.jpg" alt="he blue marine discovery
             quest" class="card__image">
             <h3 class="card__title">The blue marine discovery
@@ -436,8 +444,10 @@
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
           <form action="send.php" method="post" class="form footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+            <div class="footer__input-group"><input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+            </div>
+            <div class="footer__input-group"><input type="tel" class="input footer__input" placeholder="Phone Number*" id="phone" name="phone" required>
+            </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button type="submit" class="button footer__button" name="send-footer">Send</button>
             <span class="footer__info">* Required Fields</span>
@@ -454,7 +464,7 @@
           <span>Cancellation policy</span>
         </div>
         <div class="footer__cancellatios_icon">
-          <img src="src/img/pay_icons.svg" alt="icons">
+          <img src="src/img/pay_icon.png" alt="icons">
         </div>
       </div>
     </div>
@@ -468,10 +478,10 @@
         <img src="src/img/close.svg" alt="icon: close">
       </a>
       <h3 class="modal__title modal__title">Booking</h3>
-      <form action="send.php" method="post" class="form modal__form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-        <input type="text" class="input modal__input" placeholder="Email*" name="email">
+      <form action="send.php" method="post" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+        <input type="tel"  class="input modal__input" placeholder="Phone Number*" id="phone-2" name="phone" required>
+        <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button type="submit" class="button modal__button" name="send-footer">Send</button>
         <span class="modal__info">* Required Fields</span>
@@ -482,6 +492,9 @@
   <!-- /.modal -->
   <script src="src/js/jquery-3.6.0.min.js"></script>
   <script src="src/js/swiper-bundle.min.js"></script>
+  <script src="src/js/jquery.validate.min.js"></script>
+  <script src="src/js/jquery.maskedinput.min.js"></script>
+  <script src="src/js/aos.js"></script>
   <script src="src/js/main.js"></script>
 </body>
 </html>
